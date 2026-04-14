@@ -5,20 +5,20 @@
 class Ax < Formula
   desc "Agentic coding DX metrics"
   homepage "https://github.com/acroos/ax"
-  version "0.1.5"
+  version "0.1.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/acroos/ax/releases/download/v0.1.5/ax_0.1.5_darwin_amd64.tar.gz"
-      sha256 "d45b284f2ae92b923f4678fb366fe655ad3c43804b0ede064c5602be550008a4"
+      url "https://github.com/acroos/ax/releases/download/v0.1.6/ax_0.1.6_darwin_amd64.tar.gz"
+      sha256 "5aa9b76af8620cf0ac6d1be2dfb4d841bf64e4f5dca3e3f52df415ed19a6a73f"
 
       define_method(:install) do
         bin.install "ax"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/acroos/ax/releases/download/v0.1.5/ax_0.1.5_darwin_arm64.tar.gz"
-      sha256 "ce96a9c6f52fa3bc5ae21c9afc077322b2fd32b26e6e9c5d118e7ffabb46b688"
+      url "https://github.com/acroos/ax/releases/download/v0.1.6/ax_0.1.6_darwin_arm64.tar.gz"
+      sha256 "dda7b6da3d8059b6e72ec38b6310a83a3ba6d2ba14bd634381f433bef414a243"
 
       define_method(:install) do
         bin.install "ax"
@@ -28,15 +28,15 @@ class Ax < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/acroos/ax/releases/download/v0.1.5/ax_0.1.5_linux_amd64.tar.gz"
-      sha256 "bde12ed9ee422f443a625266203477fff5f7eab04d0f82c02c788dc6a28ebce9"
+      url "https://github.com/acroos/ax/releases/download/v0.1.6/ax_0.1.6_linux_amd64.tar.gz"
+      sha256 "d39cff8e3ec9dd2a8bc3dd43d8abced9ce66895601f833190e029b80054bcfae"
       define_method(:install) do
         bin.install "ax"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/acroos/ax/releases/download/v0.1.5/ax_0.1.5_linux_arm64.tar.gz"
-      sha256 "3fe302c047dc938a67fc373af96bae99387dce4c3997c0cd43748030c6596fa1"
+      url "https://github.com/acroos/ax/releases/download/v0.1.6/ax_0.1.6_linux_arm64.tar.gz"
+      sha256 "56d58d7a56817fef4ef61a0e81dda71b75d1c0f864be0f5ac96b94a19872169c"
       define_method(:install) do
         bin.install "ax"
       end
