@@ -5,20 +5,20 @@
 class Ax < Formula
   desc "Agentic coding DX metrics"
   homepage "https://github.com/acroos/ax"
-  version "0.1.21"
+  version "0.1.22"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/acroos/ax/releases/download/v0.1.21/ax_0.1.21_darwin_amd64.tar.gz"
-      sha256 "97b8e443e0fbec01e4372fb5974c047cda5084f05f4485f544f31d15a71bd117"
+      url "https://github.com/acroos/ax/releases/download/v0.1.22/ax_0.1.22_darwin_amd64.tar.gz"
+      sha256 "79302736a184648f8123b63b2d030f6cd07039e4e811ca994f1d7b8c16b4779b"
 
       define_method(:install) do
         bin.install "ax"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/acroos/ax/releases/download/v0.1.21/ax_0.1.21_darwin_arm64.tar.gz"
-      sha256 "f33192d4853b924feddff491bf4c1f93eb58688659cbb003e7a273791632b709"
+      url "https://github.com/acroos/ax/releases/download/v0.1.22/ax_0.1.22_darwin_arm64.tar.gz"
+      sha256 "b208b74b28d05bd479b976d2466f2a622850b183b49041b203b2f96c86680bbc"
 
       define_method(:install) do
         bin.install "ax"
@@ -28,15 +28,15 @@ class Ax < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/acroos/ax/releases/download/v0.1.21/ax_0.1.21_linux_amd64.tar.gz"
-      sha256 "041adbb08c897b776e9ebf35b05a101ab00ce3ce64e01ed40e4da1c2664af5dc"
+      url "https://github.com/acroos/ax/releases/download/v0.1.22/ax_0.1.22_linux_amd64.tar.gz"
+      sha256 "753aed3ce2f86ebc8c2c7ae0bf08c17a056d8625f300227f99d6268c728c94a7"
       define_method(:install) do
         bin.install "ax"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/acroos/ax/releases/download/v0.1.21/ax_0.1.21_linux_arm64.tar.gz"
-      sha256 "5b80011c7573a6d4845e9e43a9b5eea745fbd553b69a5ee652ee8b107f5dd78a"
+      url "https://github.com/acroos/ax/releases/download/v0.1.22/ax_0.1.22_linux_arm64.tar.gz"
+      sha256 "96546f03d9cc1e35e2a640da4a1eacc39da2c002ee2d46634842004c320b6297"
       define_method(:install) do
         bin.install "ax"
       end
